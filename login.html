@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - City General Hospital</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+
+<body>
+
+    <div class="auth-wrapper">
+        <div class="auth-card card">
+            <div class="auth-header text-center">
+                <div class="auth-icon">🔐</div>
+                <h2>Staff Login</h2>
+                <p>Welcome back! Please login to access the system.</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="admin@hospital.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="••••••" required>
+                </div>
+
+                <div id="loginError" class="error-msg" style="display: none;">
+                    Invalid email or password.
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+
+            <div class="text-center mt-1">
+                <a href="index.html" class="back-link">&larr; Back to Home</a>
+            </div>
+
+            <div class="demo-credentials mt-2">
+                <p><strong>Demo Credentials:</strong></p>
+                <small>Admin: admin@hospital.com / 123</small><br>
+                <small>Doctor: doctor@hospital.com / 123</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>

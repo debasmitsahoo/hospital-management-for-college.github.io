@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - HMS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>🏥 HMS</h3>
+                <span id="role-badge" class="badge">Role</span>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" data-view="home" class="active"><span class="icon">🏠</span> Dashboard</a></li>
+                <li><a href="#" data-view="patients"><span class="icon">🧑‍⚕️</span> Patients</a></li>
+                <li><a href="#" data-view="doctors"><span class="icon">👨‍⚕️</span> Doctors</a></li>
+                <li><a href="#" data-view="records"><span class="icon">📋</span> Medical Records</a></li>
+
+                <!-- Admin Only -->
+                <li class="admin-only"><a href="#" data-view="employees"><span class="icon">👥</span> Employees</a></li>
+
+                <li><a href="#" id="logoutBtn"><span class="icon">🚪</span> Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <button id="toggle-sidebar" class="btn-icon">☰</button>
+                <div class="user-profile">
+                    <span id="user-name">Loading...</span>
+                    <!-- <img src="assets/images/avatar.png" class="avatar" alt="User"> -->
+                    <div class="avatar-placeholder">👤</div>
+                </div>
+            </header>
+
+            <!-- Dynamic Content Area -->
+            <div id="app-content" class="content-wrapper fade-in">
+                <!-- Views will be rendered here by JS -->
+                <div class="loading-spinner">Loading...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

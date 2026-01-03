@@ -1,0 +1,76 @@
+/* Auth Page Styles */
+
+body {
+    background-color: #f0f2f5;
+    background-image: radial-gradient(#e6f0ff 2px, transparent 2px);
+    background-size: 30px 30px;
+}
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-top: 5px solid var(--primary-color);
+}
+
+.auth-header {
+    margin-bottom: 30px;
+}
+
+.auth-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.auth-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.auth-header p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.back-link {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.back-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.error-msg {
+    background-color: #fde8e8;
+    color: #c81e1e;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #fbd5d5;
+}
+
+.demo-credentials {
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #495057;
+    margin-top: 20px;
+}
